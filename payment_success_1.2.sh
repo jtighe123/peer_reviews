@@ -1,7 +1,7 @@
 #!/bin/bash
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
 EMAIL_1="no-payments@missguided.pagerduty.com"
-EMAIL_2="josh.tighe@missguided.com"
+EMAIL_2="servicedesk@missguided.com"
 
 RESULT_P24=`mysql -h prod-aurora-db-read-2.mgprod.co.uk missguided_live -e "select COUNT(*)
 FROM sales_flat_order o INNER JOIN sales_flat_order_payment p ON p.parent_id = o.entity_id
